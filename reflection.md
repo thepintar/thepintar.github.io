@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
+##[link to site](http://thepintar.github.io)
+=======
 ##[link to site](thepintar.github.io)
+>>>>>>> master
 
 ##What did you learn about CSS padding, borders, and margin by doing this challenge?
 I learned that putting certain things into practice is tricker than it initially seems. Adding in a navigation bar with link blocks in it gave me plenty of opportunity to play around with margins and padding, although I decided against borders. Here again however, temporarily adding borders to different elements within the page helped me to easier visualize how my CSS was being interpreted into the actual layout, and I found that very helpful. I also attempted to not use the "<center>" tag, instead trying to utilize CSS whenever possible, and I think I reached an agreeable outcome.
