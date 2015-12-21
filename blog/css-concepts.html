@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+How was it to wireframe and create an HTML page with a pair?
+	It was nice having someone else to suggest ideas I hadn't thought of, although once we found a template we liked, we mostly worked on our own.
+Did you find wireframing to be helpful to your development process?
+	I did find it helpful. Having the roadmap there to reference let me see right away what sort of code I needed so I googled it and didn't waste time looking around for different options.
+What did you and your pair decide made a good wireframe? 
+	We decided something very simple and clear worked best, especially for a blog.
+What new semantic elements did you learn about (if any)?
+	I learned about about <header>,<footer>,<nav> and <article>.
+
+-->
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">	
+	<meta charset="utf-8"/>
+	<title>
+		Michael Pintar's Blog
+	</title>
+</head>
+
+<body>
+
+	<header>
+	
+		<div id="top_name"><a href="../index.html">Michael Pintar</a></div>
+	<nav>
+		<ul id="nav_bar">
+			<li id="nav_item"><a href="blog/index.html">BLOG</a></li>
+			<li id="nav_item"><a href="#">ABOUT ME</a></li>
+			<li id="nav_item"><a href="#">PROJECTS</a></li>
+			<li id="nav_item"><a href="#">SELECT CHEESES</a></li>
+			<li id="nav_item"><a href="#">OWLS</a></li>
+		</ul>
+
+	</nav>
+
+	</header>
+	<center>
+
+	<img src="../imgs/bird-plate.jpg"/>
+	<p style="font-size:15px; font-family:helvetica;">
+		<strong>Week 3</strong>
+	</p>
+	<p style="font-size:10px; font-family:helvetica; color:white">
+		<em>12/18/2015</em>
+	</p>
+ 	<h1>The Three Little Pigs</h1>
+    <h2>Padding, Border and Margin</h2>
+</center>
+
+<article  class="blog_entry">
+    <p>
+        There were once three little pigs named Padding, Border and Margin. These three pigs lived contently within small houses they build for themselves on the edge of a wild metropolis, but being different pigs, they had different strategies in building. 
+    </p>
+    <p>
+        The first little pig, Padding, was- well I'll go ahead and say it. He was a dumbo. He didn't so much build a house as he did line a sleeping area with pillow cushions. It seperated him from the ground around him and gave him is own space and so he was satisfied.
+    </p>
+    <p>
+        The second little pig, Border, was a bit more industrious. He too lined his bed with pillows, but around the pillows he built a little fence to delineate where his space began and ended. Nobody could be confused about where his territory was!
+    </p>
+    <p>
+        The third little pig, Margin, was a neat freak. He followed his brothers' example with pillows and Border's idea of a fence, but he wanted some space between his fence and the outside world. As it was, someone could just come and build their own space right up against his fence. Sure that someone wouldn't be inside the fence, but Margin couldn't stand the thought of a house right next to his. He liked his space. It was clean. And so around the fence Margin dug a moat so nobody he could have his space.
+    </p>
+    <p>
+        The three lived contently in their spaces for many years, until one day a big bad Img came to town. And he huffed and he puffed, but luckily for the pigs, the developer had referenced an outside host who took down their content and the Img turned into a little broken icon and everyone lived happily ever after. 
+    </p>
+    <p>
+        Readers, this is a silly metaphor for understanding what margin, border and padding mean, but perhaps if you take a look at the image below you'll understand what I mean by it:
+    </p>
+    <center>
+    <div class="margin">
+    <img src="http://orm-chimera-prod.s3.amazonaws.com/1234000001819/figs/web/dojo_0202.png"/></div></center>
+    <p>
+        In our metaphor, each pig represents the "Content" area. They're whatever it is we're displaying on the page, be that an image, or text, or whatever it is. The next optionally visible element is the border, which is our metaphor is the fence. The border is invisible by default, but you can make it visible to create a demarcation between the element content and the rest of the page. In between the border (fence) and the content (pig) we see the padding. This is the pillow pile in our metaphor. Padding is invisible, but represents the space between the content and the border. If there is no visible border, it isn't that important, but can still be adjusted. On the outskirts we have the margin (moat), which is the last line of defense between the border and outside elements on the page. It's possible to have these all set to zero and to not make the border visible, thereby giving the content no additional space, but in general, for a well designed page, each element ought to have a bit of space separating it from other content. The end.
+    </p>
+</article>
+<center>
+<footer>
+<table cellpadding="20" cellspacing="20" border="0">
+	<tr>
+		<td ><a href="#"><img src="../imgs/linked-in-logo.jpg"/></a></td>
+		<td><a href="#"><img src="../imgs/facebook-logo.png"/></a></td>
+		<td><a href="#"><img src="../imgs/google-plus-logo.png"/></a></td>
+	</tr>
+</table>	
+<center>
+
+<p style="font-size:12px; font-family:arial; text-align:center"><a href="mailto:thepintar@gmail.com">Contact Me</a></p>
+</footer>
+</body>
+</html>
