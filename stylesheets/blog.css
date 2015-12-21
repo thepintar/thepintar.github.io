@@ -1,3 +1,8 @@
+*{
+	font-family:"Century Gothic", sans-serif;
+color:white;
+}
+
 #blog_entries{
 display:block;
 margin:auto;
@@ -7,4 +12,19 @@ font-family:"Arial Black", sans-serif;
 color:white;
 text-decoration:none;
 text-align:center;
+}
+
+article.blog_entry{
+	margin:auto;
+	width:75%;
+
+}
+
+.margin{
+height:340px;
+width:500px;
+}
+.margin img{
+	width:100%;
+	height:auto;
 }
