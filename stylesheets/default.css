@@ -64,6 +64,15 @@ div p a{
 	text-decoration:none;
 	color:white;
 }
+div.ruby-class{
+	font-family:courier;
+	padding-left:1em;
+	padding-bottom:1em;
+	width:100%;
+	background-color: black;
+	color: white;
+
+}
 .main_text{
 width:40%;
 float:left;

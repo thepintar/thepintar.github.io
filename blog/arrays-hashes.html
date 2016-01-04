@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">	
+	<meta charset="utf-8"/>
+	<title>
+		Michael Pintar's Blog
+	</title>
+</head>
+
+<body>
+
+	<header>
+	
+		<div id="top_name"><a href="../index.html">Michael Pintar</a></div>
+	<nav>
+		<ul id="nav_bar">
+			<li id="nav_item"><a href="index.html">BLOG</a></li>
+			<li id="nav_item"><a href="#">ABOUT ME</a></li>
+			<li id="nav_item"><a href="#">PROJECTS</a></li>
+			<li id="nav_item"><a href="#">SELECT CHEESES</a></li>
+			<li id="nav_item"><a href="#">OWLS</a></li>
+		</ul>
+
+	</nav>
+
+	</header>
+	<center>
+	<img src="../imgs/bird-plate.jpg"/>
+	<p style="font-size:15px; font-family:helvetica;">
+		<strong>Week 4</strong>
+	</p>
+	<p style="font-size:10px; font-family:helvetica; color:gray">
+		<em>01/01/2015</em>
+	</p>
+ 	<h1>Arrays and Hashes</h1>
+    <h2>What Else is New?</h2>
+</center>
+
+<article class="blog_entry">
+    <p>
+        People in the place to be! After weeks and weeks of sleeping on it, we're finally back in the soft bosom of Ruby! God damn is it nice to be here again. More importantly, arrays and hashes are here again, and they're here to stay. Oh, you aren't familiar with Arrays and Hashes? Well lets dive in then!
+    </p>
+    <p>
+    	So what are Arrays and Hashes? What do they have in common? What don't they? Lets start from the top. Both Arrays and Hashes are lists of information. They both contain (or at least can contain) more than one discreet item, which can be recalled whenever you want. They're great places to store a lot of information simple information so you can simplify your code! For instance, if you wanted to make a list of friends, instead of making a bunch of variables like:<div class="ruby-class"><br>
+    	1  &nbsp;  friend1 = "Charles"<br>
+		2  &nbsp;  friend2 = "Larry"<br>
+		3 &nbsp;   friend3 = "Hans"<br>
+		4  &nbsp;  friend4 = "Candace"<br>
+		5  &nbsp;  friend5 = "Fergus"<br>
+	</div><br>
+		You could just create an array of friends like this:<br><br>
+		<div class="ruby-class"><br>
+    	1 &nbsp;  friend_array = ["Charles","Larry","Hans","Candace","Fergus"]<br>
+	</div><br>
+	Now all of your friends are stored together! You can easily call up any of these friends name by referring to the index number of each item. This can get a little tricky at first because you have to remember that the first item is technically at index place 0, not index place 1. So lets say you want to print the name of your second friend, Larry, on the screen. You'd do that like so:
+	<br><br>
+		<div class="ruby-class"><br>
+    	1 &nbsp;   puts friend_array[1]<br>
+	</div><br>
+	This seems pretty good, right? Well lets say you're a bit more selective with your friends and you still want to store them in a list, but you want them assigned to their most noticable attribute rather than just a list. This could be a good moment for Hashes! What makes Hashes different is that instead of each item being assigned an index place number, you can assign each of them to their own Key. You can think of a key like a pointer. So in this case, each of our keys will be a trait and each name will be a value. Assigning these names to a Hash will look like this:
+	<br><br>
+		<div class="ruby-class"><br>
+    	1 &nbsp;   friend_hash = Hash.new<br>
+    	2 &nbsp;   friend_hash["biggest nose"]="Charles"<br>
+    	3 &nbsp;   friend_hash["coolest hair"]="Larry"<br>
+    	4 &nbsp;   friend_hash["most german"]="Hans"<br>
+    	5 &nbsp;   friend_hash["the female one"]="Candace"<br>
+    	6  &nbsp;  friend_hash["dumbest name"]="Fergus"
+    	<br>
+	</div><br>
+	Now, when you want to bring up one of your friends names, you can do it like this:
+	<br><br>
+		<div class="ruby-class"><br>
+    	1 &nbsp;   puts friend_hash["coolest hair"]<br>
+	</div><br>
+	And you'll still get Larry!
+    </p>
+    <p>
+    	Obviously there are a lot of other reasons to use Hashes and Arrays. Lets say you wanted to store all your friends phone numbers, say, or you wanted to keep a budget and store how much you spent on different things every month. You could do it using a Hash! Or maybe you just want to store a list of all the stuff you spent money on for your budget. An array would be perfect for that!
+    </p>
+    <p>
+    	The last think we're going to go over is a handy way to access the information in your Array or Hash called iteration. This will automatically look at each item in the array, and you can do whatever you want with it at that point. First lets look at the syntax for iterating through your friend array:
+    	<br><br>
+		<div class="ruby-class"><br>
+    	1 &nbsp;    friend_array.each do |x|<br>
+    	2 &nbsp; &nbsp; &nbsp;   	puts x<br>
+    	3 &nbsp;    end
+    	<br>
+	</div><br>
+		This will print each friend's name to the screen, one after the other. How about iterating through the Hash?
+		<br><br>
+		<div class="ruby-class"><br>
+    	1 &nbsp;    friend_array.each do |key, value|<br>
+    	2 &nbsp; &nbsp; &nbsp;   	puts key<br>
+    	3 &nbsp; &nbsp; &nbsp;   	puts value<br>
+    	4 &nbsp;    end
+    	<br></div><br>
+    	This will print each friend's quality, followed by their name on the following line.
+    </p>
+    <p>
+    	Think about how else you could use Arrays and Hashes!
+    </p>
+</article>
+<center>
+<footer>
+<table cellpadding="20" cellspacing="20" border="0">
+	<tr>
+		<td ><a href="#"><img src="../imgs/linked-in-logo.jpg"/></a></td>
+		<td><a href="#"><img src="../imgs/facebook-logo.png"/></a></td>
+		<td><a href="#"><img src="../imgs/google-plus-logo.png"/></a></td>
+	</tr>
+</table>	
+<center>
+
+<p style="font-size:12px; font-family:arial; text-align:center"><a href="mailto:thepintar@gmail.com">Contact Me</a></p>
+</footer>
+</body>
+</html>
