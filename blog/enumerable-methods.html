@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">	
+	<meta charset="utf-8"/>
+	<title>
+		Michael Pintar's Blog
+	</title>
+</head>
+
+<body>
+
+	<header>
+	
+		<div id="top_name"><a href="../index.html">Michael Pintar</a></div>
+	<nav>
+		<ul id="nav_bar">
+			<li id="nav_item"><a href="index.html">BLOG</a></li>
+			<li id="nav_item"><a href="#">ABOUT ME</a></li>
+			<li id="nav_item"><a href="#">PROJECTS</a></li>
+			<li id="nav_item"><a href="#">SELECT CHEESES</a></li>
+			<li id="nav_item"><a href="#">OWLS</a></li>
+		</ul>
+
+	</nav>
+
+	</header>
+	<center>
+	<img src="../imgs/bird-plate.jpg"/>
+	<p style="font-size:15px; font-family:helvetica;">
+		<strong>Week 5</strong>
+	</p>
+	<p style="font-size:10px; font-family:helvetica; color:gray">
+		<em>01/09/2015</em>
+	</p>
+ 	<h1>Enumerable Methods</h1>
+    <h2>Count 'em Up</h2>
+</center>
+
+<article class="blog_entry">
+    <p>
+        Here we are with another blog post to help illustrate some points of learning from the previous week! This week, we spent a good deal of time exploring and learning new methods to help us with some fun challenges! Sometimes it seems like the amount of methods out there are endless: the more you search, the more you find! It's comforting to know that so many neat tools exist for whatever problem you may come across in your coding experiences.
+    </p>
+    <p>
+    	This week we'll be chatting about an Enumerable Method that I did not use in any of my code, but think could be useful in the future: "group_by". What group_by does is take a collection of objects, run them through a specified test, and groups them in a hash by their output. I'll start by sharing the example that Ruby Docs has and explaining it a little more than they do:
+    	<div class="ruby-class"><br>
+    	1  &nbsp;  (1...6).group_by { |i| i%3 }<br>
+		2  &nbsp;  #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]<br>
+	</div><br>
+		So check that out. By running the numbers one through six through group_by using the block "i%3", Ruby will run 1 mod 3, 2 mod 3, 3 mod 3, etc...and every object that returns the same answer will go into the same new hash, sorted by answer. As you can see in the output, 0 is returned by 3 and 6, 1 by 1 and 4 and 2 by 2 and 5!
+		</p>
+		<p>
+	Maybe thats still a little bit confusing to you? Well lets try a different example. Say you have a group of friends and for whatever reason you've decided that people with longer names are a little bit cooler than people with shorter names. However, you don't feel like counting up the letters in everyone's name. You could use group_by here like so:
+	<br><br>
+		<div class="ruby-class"><br>
+    	1 &nbsp;   ["Sherry","Terry","Hank","Georgio","Pepe","Philadelphia","Joe","Marideth"].group_by {|i| i.length}<br>
+	</div><br>
+	which will return:
+	<br><br>
+		<div class="ruby-class"><br>
+    	=> {6=>["Sherry"], 5=>["Terry"], 4=>["Hank", "Pepe"], 7=>["Georgio"], 12=>["Philadelphia"], 3=>["Joe"], 8=>["Marideth"]}<br>
+	</div><br>
+	This example might be a little bit strange since when would you want to do something like that? But the method itself brings up interesting possibilities. Now we've got a hash of name lengths, and if you were to store it, you could call up just the names of whichever length you wanted. 
+    </p>
+    <p>
+    	One more example would be using it to separate a group of numbers into odds and evens. This should be pretty familiar to you now:
+    	<br><br><div class="ruby-class"><br>
+    	1  &nbsp;  (0...10).group_by {|i| i.even?}<br>
+	</div><br>
+	This will of course return a hash with two key/value pairs. The key will be "true" and its value will be an array of the even numbers and the second will be "false" with an array of the odd numbers, like so:
+	<br><br><div class="ruby-class"><br>
+    	{true=>[0, 2, 4, 6, 8], false=>[1, 3, 5, 7, 9]}<br>
+	</div><br>
+</p>
+<p>
+	So there you go! Hopefully you're already seeing the power of group_by, and other different ways you could use it in conjunction with other methods to get some really great results!
+</article>
+<center>
+<footer>
+<table cellpadding="20" cellspacing="20" border="0">
+	<tr>
+		<td ><a href="#"><img src="../imgs/linked-in-logo.jpg"/></a></td>
+		<td><a href="#"><img src="../imgs/facebook-logo.png"/></a></td>
+		<td><a href="#"><img src="../imgs/google-plus-logo.png"/></a></td>
+	</tr>
+</table>	
+<center>
+
+<p style="font-size:12px; font-family:arial; text-align:center"><a href="mailto:thepintar@gmail.com">Contact Me</a></p>
+</footer>
+</body>
+</html>
