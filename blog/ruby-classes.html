@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">	
+	<meta charset="utf-8"/>
+	<title>
+		Michael Pintar's Blog
+	</title>
+</head>
+
+<body>
+
+	<header>
+	
+		<div id="top_name"><a href="../index.html">Michael Pintar</a></div>
+	<nav>
+		<ul id="nav_bar">
+			<li id="nav_item"><a href="index.html">BLOG</a></li>
+			<li id="nav_item"><a href="about.html">ABOUT ME</a></li>
+			<li id="nav_item"><a href="#">PROJECTS</a></li>
+			<li id="nav_item"><a href="#">SELECT CHEESES</a></li>
+			<li id="nav_item"><a href="#">OWLS</a></li>
+		</ul>
+
+	</nav>
+
+	</header>
+	<center>
+	<img src="../imgs/bird-plate.jpg"/>
+	<p style="font-size:15px; font-family:helvetica;">
+		<strong>Week 6</strong>
+	</p>
+	<p style="font-size:10px; font-family:helvetica; color:gray">
+		<em>01/16/2015</em>
+	</p>
+ 	<h1>Ruby Classes</h1>
+    <h2>Have a Little Class People</h2>
+</center>
+
+<article class="blog_entry">
+    <p>
+        Welcome back! This week we're discussing ruby Classes! You can think of a class as a way to group a bunch of things that all have the same properties and rules associated with them. For instance, imagine you're a librarian who needs to keep track of a bunch of books. You could create a class called Book that would help you with this. Here's how you would start out:
+    </p>
+    <div class="ruby-class"><br>
+    	1  &nbsp;  Class Book<br>
+		2  &nbsp;  end<br>
+	</div><br>
+	<p>
+        Pretty good, right? Well thats only the beginning. If we want our Book class to actually contain any properties or methods, we'll need to add those within. The first important step is to define the initialize method. This is what the Book class will run when you first create a new instance of Book. You'll see it below:
+    </p>
+    <div class="ruby-class"><br>
+    	1  &nbsp;  Class Book<br>
+    	2  &nbsp;  def initialize(name, pagecount, isbn, checkedout)<br>
+    	3  &nbsp; &nbsp; @name = name <br>
+    	4  &nbsp; &nbsp; @pagecount = pagecount <br>
+    	5  &nbsp; &nbsp; @isbn = isbn <br>
+		6  &nbsp; &nbsp; @checkedout = checkedout<br>
+		7  &nbsp;  end<br>
+		8  &nbsp;  end<br>
+	</div><br>
+	<p>
+        You're probably seeing a few things you know about as well as a few new things. Lets start with line two. You'll see we're defining the method initialize to expect four arguments passed in. This means when we create a Book.new, the class will expect all of this data to be passed to it. Then, within the method you'll see those arguments being set equal to themselves with ampersands in front of them. There is something important happening here. The variables with ampersands preceding them are what we call "instance variables". They will be accessible from any method within this class, and so what we're essentially doing here is telling the class to store all four pieces of information for use with this new object.
+    </p>
+    <p>
+    	Okay great. So now lets make a new method to make use of these instance variables.</p>
+        <div class="ruby-class"><br>
+    	1  &nbsp;  Class Book<br>
+    	2  &nbsp;  def initialize(name, pagecount, isbn, checkedout)<br>
+    	3  &nbsp; &nbsp; @name = name <br>
+    	4  &nbsp; &nbsp; @pagecount = pagecount <br>
+    	5  &nbsp; &nbsp; @isbn = isbn <br>
+		6  &nbsp; &nbsp; @checkedout = checkedout<br>
+		7  &nbsp;  end<br>
+		8  &nbsp;  <br>
+    	9  &nbsp;  def info<br>
+    	10 &nbsp; &nbsp; puts "The Title is #{@name}." <br>
+    	11 &nbsp; &nbsp; puts "The page count is #{@pagecount} pages." <br>
+    	12  &nbsp; &nbsp; puts "The ISBN is #{@isbn}."<br>
+		13  &nbsp; &nbsp; @checkedout = true ? puts "It is currently checked out." : "It is currently on the shelves."<br>
+		14  &nbsp;  end<br>
+		15  &nbsp;  end<br>
+	</div><br>
+	<p>
+    	Now, when we create a new instance of Book and call info on it, it will print all the information we passed in to screen. So for instance:
+    	</p>
+    <div class="ruby-class"><br>
+    	1  &nbsp;  huckfinn = Book.new("The Adventures of Huckleberry Finn", 366, 9780671420727, true<br>
+    	2  &nbsp;  huckfinn.info<br>
+    	3  &nbsp;  # => The Title is The Adventures of Huckleberry Finn<br>
+    	4  &nbsp;  # => The page count is 366 pages.<br>
+    	5  &nbsp;  # => The ISBN is 9780671420727.<br>
+		6  &nbsp;  # => It is currently checked out.<br>
+	</div><br>
+	<p>
+    	This is a pretty redimentary way to use a class, but it gets the point across. You could also attribute reader and attribute writer (or use both in attribute accessor) to make it simple to call up each piece of info or modify it without creating new methods. Next time, on Dragon Ball Z!
+    	</p>
+</article>
+<center>
+<footer>
+	<nav class="social_media">
+		<a href="https://www.linkedin.com/in/michaelkpintar"><img src="../imgs/linked-in-logo.jpg"/></a>
+		<a href="https://www.facebook.com/tartanfurmonster"><img src="../imgs/facebook-logo.png"/></a>
+		<a href="https://plus.google.com/110364470050516464556/"><img src="../imgs/google-plus-logo.png"/></a>
+	</nav>
+
+<center>
+
+<p style="font-size:12px; font-family:arial; text-align:center"><a href="mailto:thepintar@gmail.com">Contact Me</a></p>
+</footer>
+</body>
+</html>
