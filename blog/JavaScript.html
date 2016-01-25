@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">	
+	<meta charset="utf-8"/>
+	<title>
+		Michael Pintar's Blog
+	</title>
+</head>
+
+<body>
+
+	<header>
+	
+		<div id="top_name"><a href="../index.html">Michael Pintar</a></div>
+	<nav>
+		<ul id="nav_bar">
+			<li id="nav_item"><a href="index.html">BLOG</a></li>
+			<li id="nav_item"><a href="about.html">ABOUT ME</a></li>
+			<li id="nav_item"><a href="#">PROJECTS</a></li>
+			<li id="nav_item"><a href="#">SELECT CHEESES</a></li>
+			<li id="nav_item"><a href="#">OWLS</a></li>
+		</ul>
+
+	</nav>
+
+	</header>
+	<center>
+	<img src="../imgs/loop.jpg"/>
+	<p style="font-size:15px; font-family:helvetica;">
+		<strong>Week 7</strong>
+	</p>
+	<p style="font-size:10px; font-family:helvetica; color:gray">
+		<em>01/24/2015</em>
+	</p>
+ 	<h1>Javascript</h1>
+    <h2>Loop the Loop</h2>
+</center>
+
+<article class="blog_entry">
+    <p>
+        Week 7 and we're just plugging along like a steam engine. Or like a rollercoaster car! Eh? EH?! Well listen, I'm going to go ahead and
+        force the metaphor because its working for this entry about loops. Don't try and hold me back. Here we go.
+    </p>
+    <p>
+    	We've learned about several methods to store a lot of data in a small place: Arrays, Hashes, and now in Javascript, objects. Its convenient to have these groupings, but only if you have a good method for retrieving the data again. Each of these methods allows for quick access of
+    	specific elements, but what if we need to access or adjust every element within an Array or Object? Now we're looking at a good time to loop it up.
+    </p>
+    <p>
+    	Lets talk about what loops actually are. A loop is an intended repetition. Invoking a loop can be an amazing way to DRY up code, or, again, to access different values in an Array. Looking at loops and how they operate in both Ruby and Javascript offers a great example of the
+    	differences in syntax of both languages.
+    </p>
+    <p>
+    	First lets look at some of the similarities in looping between the two. Take the "While" statement in Ruby for example.
+    </p>
+        <div class="ruby-class"><br>
+    	1  &nbsp;  while conditional [do]<br>
+    	2  &nbsp;  &nbsp; code<br>
+    	3  &nbsp; end <br>
+	</div><br>
+	 <p>
+    	This loop lets you set a condition (i.e. variable = true or counter < 10) which the loop will check the status of before every time it repeats. This loop in particular is highly readable in Ruby syntax. Another similar loop uses the "Until" statement, which looks similar.
+    </p>
+          <div class="ruby-class"><br>
+    	1  &nbsp;  until conditional [do]<br>
+    	2  &nbsp;  &nbsp; code<br>
+    	3  &nbsp; end <br>
+	</div><br>
+	<p>
+    	Javascript has its own "While" loop, which isn't dissimilar:
+    </p>
+        <div class="ruby-class"><br>
+    	1  &nbsp;  while (conditional) {<br>
+    	2  &nbsp;  &nbsp; code<br>
+    	3  &nbsp; } <br>
+	</div><br>
+	<p>
+    	If you choose to use curly brace formatting in Ruby, its practically identical! But lets go a little bit further and see how the similarities break down if we're using loops to iterate through an array. Here's an example in Ruby:
+    </p>
+	  <div class="ruby-class"><br>
+    	1  &nbsp;  array = ["Orange","Brown","Purple","Gray"]<br>
+    	2  &nbsp;  array.Each do |color|<br>
+    	3  &nbsp; &nbsp; puts "#{color} is my favorite color!" <br>
+    	4  &nbsp;  end <br>
+    	5  &nbsp;  ==>Orange is my favorite color!<br>
+		6  &nbsp;  ==>Brown is my favorite color!<br>
+		7  &nbsp;  ==>Purple is my favorite color!<br>
+		8  &nbsp;  ==>Gray is my favorite color!<br>
+	</div><br>
+	<p>
+    	As before, the Ruby syntax keeps everything really readable. Its not quite as nice looking in Javascript, where we'll use the powerful "For" loop, using the following syntax:
+    </p>
+     <div class="ruby-class"><br>
+    	1  &nbsp;  for (initializing statement; conditional statement; iterating change) {<br>
+    	2  &nbsp;  &nbsp; code goes here;<br>
+    	3  &nbsp; } <br>
+
+    </div><br>	
+    <p>
+    	If we want to use the same array and return the same results it'll look something like this:
+    </p>
+	  <div class="ruby-class"><br>
+    	1  &nbsp;  array = ["Orange","Brown","Purple","Gray"]<br>
+    	2  &nbsp;  for (i = 0; i < array.length; i++) {<br>
+    	3  &nbsp; &nbsp; console.log(array[i]+"is my favorite color!"); <br>
+    	4  &nbsp; } <br>
+	</div><br>
+	<p>
+    	What this loop is doing is creating a new variable "i" which it sets to 0. As long as i is less than the number of elements in the array, we'll add one to i and log each array item to the console along with the phrase "is my favorite color!". This version requires a little more thought about how you want to go about iterating across the array, but because of that its more powerful. Its similar to using the native OS on a device versus using the shell to navigate. Once you understand how to use it you have more options!
+    </p>
+    <p>
+    	I think the lesson here is that Javascript initially looks more foreboding, especially coming from Ruby syntax, but once you get comfortable with it you start to see new possibilities.
+    </p>
+</article>
+<center>
+<footer>
+	<nav class="social_media">
+		<a href="https://www.linkedin.com/in/michaelkpintar"><img src="../imgs/linked-in-logo.jpg"/></a>
+		<a href="https://www.facebook.com/tartanfurmonster"><img src="../imgs/facebook-logo.png"/></a>
+		<a href="https://plus.google.com/110364470050516464556/"><img src="../imgs/google-plus-logo.png"/></a>
+	</nav>
+
+
+<p style="font-size:12px; font-family:arial; text-align:center"><a href="mailto:thepintar@gmail.com">Contact Me</a></p>
+</center>
+
+</footer>
+</body>
+</html>
