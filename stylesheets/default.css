@@ -84,6 +84,17 @@ font-family:"Century Gothic", sans-serif;
 color:white;
 text-align:left;
 }
+.wider_text{
+width:80%;
+float:left;
+position:relative;
+left:10%;
+padding: 20px;
+font-size:12px;
+font-family:"Century Gothic", sans-serif;
+color:white;
+text-align:left;
+}
 #resume{
 	clear:both;
 	float:left;
