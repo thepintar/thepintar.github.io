@@ -1,0 +1,20 @@
+body{
+	background-color:#393850;
+font-family:"Century Gothic", sans-serif;
+color:white;
+}
+
+.table_class{
+	float:left;
+	width:90%;
+	background-color:white;
+	margin: 1em;
+	padding: 1em;
+	font-size:12px;
+	font-family:"Century Gothic", sans-serif;
+	color:black;
+	text-align:left;
+	border: 1px dashed black;
+}
+.w3-table-all tr:nth-child(odd){background-color:#fff}
+.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
