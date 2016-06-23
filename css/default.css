@@ -105,8 +105,12 @@ header {
 
 #index-container{
 	padding: 20px;
-	background-color: white;
-	height: 100vh;
+	/*background-color: white;*/
+	min-height: 100vh;
+}
+
+.white-text{
+	color: white;
 }
 
 #blog-container{
@@ -127,8 +131,14 @@ header {
 #projects-container{
 	padding: 20px;
 	background-color: #6FA1FF;
-	height: 100vh;
+	min-height: 100vh;
 	display:none;
+}
+
+.wider_text{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 #game-container{
@@ -140,19 +150,33 @@ header {
 
 #face-img{
 	float: left;
-	margin: 10px;
-	margin-top: 0px;
-	margin-left: 0px;
+	margin-right: 10px;
+
 }
 
 #resume{
 	clear:both;
 }
 
+#resume a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
 .main-container{
+	position: relative;
 	width: 75%;
 	margin: 0 auto;
 	text-align: center;
+}
+
+#bearphoto{
+	width: 100%;
+	position: absolute;
+	left:0;
+	top:5em;
+	z-index: -1;
 }
 
 .main-text{
