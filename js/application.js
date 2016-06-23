@@ -1,5 +1,39 @@
 $(document).ready(function() {
+  var current_nav == "index"
+  $("#blog-nav").on("click", function(){
+    $("#"+current_nav+"-container").slideUp();
+    $("#blog-container").slideDown();
+    current_nav = "blog";
+  });
 
+  $("#about-nav").on("click", function(){
+    $("#"+current_nav+"-container").slideUp();
+    $("#about-container").slideDown();
+    current_nav = "about";
+  })
+
+  $("#projects-nav").on("click", function(){
+    $("#"+current_nav+"-container").slideUp();
+    $("#projects-container").slideDown();
+    current_nav = "projects";
+  })
+
+  $("#game-nav").on("click", function(){
+    $("#"+current_nav+"-container").slideUp();
+    $("#game-container").slideDown();
+    current_nav = "game";
+  })
+
+});
+
+  if (current_nav == "index" {
+
+  }else if(current_nav=="blog"){
+
+  }else if (current_nav=="projects"){
+
+  }
+  else if (current_nav == "game"){
     var game = new Game();
     var board = new Board();
     var currentBoardState = game.getBoard();
@@ -64,5 +98,6 @@ $(document).ready(function() {
         alert("You Lost Dingus!")
       }
     });
+  };
 
-});
+
