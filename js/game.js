@@ -295,6 +295,25 @@ Game.prototype.checkDirectionNeighbor = function(index, direction){
   };
 }
 
+Game.prototype.isOver = function(){
+  var moveCount = 0;
+  var directionArray = ["up", "down", "left","right"]
+  var that = this;
+  for( i=0 ; i<16 ; i++ ){
+    directionArray.forEach(function(direction){
+      if(that.getArray()[i]==that.checkDirectionNeighbor(i,direction)){
+        moveCount = moveCount + 1;
+      }
+
+    })
+  }
+  if(moveCount == 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 Game.prototype.spawnNew = function(){
   var currentBoard = this.getArray();
   var zeroSlots = []

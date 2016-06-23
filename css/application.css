@@ -5,7 +5,7 @@
   margin-top: -15px;
   margin-bottom: 15px;
 }
-.header-text{
+#duckies-header{
   margin: 0 auto;
   width: 100%;
   text-align: center;
@@ -19,6 +19,7 @@
 }
 
 #game-board{
+  z-index: -1;
   margin: 0 auto;
   width: 45em;
   height: 45em;
@@ -44,7 +45,7 @@
   text-align: center;
   font-weight: bold;
   overflow: hidden;
-  background-image: url('../img/2duck.jpg');
+  background-image: ur l('../img/2duck.jpg');
 }
 
 #duckies-text{
@@ -52,4 +53,5 @@
   float: left;
   width: 20%;
   text-align: center;
+  z-index: 1;
 }
