@@ -40,6 +40,7 @@ $(document).ready(function() {
     var currentBoardState = game.getBoard();
     board.getBoard(game.getArray());
     Mousetrap.bind('up', function() {
+      event.preventDefault();
       var currentArray = game.getArray();
       if (_.contains(currentArray, "0" || 0)){
         currentBoardState = game.getBoard();
@@ -55,6 +56,7 @@ $(document).ready(function() {
       }
     });
     Mousetrap.bind('down', function() {
+      event.preventDefault();
       var currentArray = game.getArray();
       if (_.contains(currentArray, "0" || 0)){
         currentBoardState = game.getBoard();
@@ -70,6 +72,7 @@ $(document).ready(function() {
       }
       });
     Mousetrap.bind('left', function() {
+      event.preventDefault();
       var currentArray = game.getArray();
       if (_.contains(currentArray, "0" || 0)){
         currentBoardState = game.getBoard();
@@ -85,6 +88,7 @@ $(document).ready(function() {
       }
     });
     Mousetrap.bind('right', function() {
+      event.preventDefault();
       var currentArray = game.getArray();
       if (_.contains(currentArray, "0" || 0)){
         currentBoardState = game.getBoard();

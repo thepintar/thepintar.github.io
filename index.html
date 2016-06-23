@@ -21,7 +21,7 @@
 <body>
 
 	<header>
-		<div id="top-name"><a class = "nav-link" href="index.html">Michael Pintar</a></div>
+		<div id="top-name"><a id = "home-link" href="index.html">Michael Pintar</a></div>
 		<div id = "nav-bar">
 			<div id="blog-nav"><a class = "nav-link" href="blog/index.html">BLOG</a></div>
 			<div id="about-nav"><a class = "nav-link" href="about.html">ABOUT ME</a></div>
@@ -31,24 +31,27 @@
 	</header>
 
 	<div id = "index-container">
-			<img id = "face-img" src="imgs/myface.png"/>
-			<div class="main-text">Something here.
-			</div>
-			<div id="resume"><a href ="MichaelKPintarResume.pdf">My Resume</a></div>
+			
+		<div class="main-container">
+		Under Construction: Try nav bar!
+		</div>
 	</div>
 
 	<div id = "blog-container">
-		<div class = "main-text">Something here.
+		<div class = "main-container">Something here.
 		</div>
 	</div>
 
 	<div id = "about-container">
-		<div class = "main-text">Something here.
+		<div class="main-container">
+			<img id = "face-img" src="imgs/myface.png"/>
+			<div class = "main-text">Something here.</div>
+			<div id="resume"><a href ="MichaelKPintarResume.pdf">My Resume</a></div>
 		</div>
 	</div> 
 
 	<div id = "projects-container">
-		<div class = "main-text">Something here.
+		<div class = "main-container">Something here.
 		</div>
 	</div> 
 
@@ -59,7 +62,19 @@
 	  <script src="lib/jasmine/jasmine.js"></script>
 	  <script src="js/game.js"></script>
 	  <script src="js/application.js"></script>
-	  <div id = "header"><div class = "header-text">Duckies!</div></div>
+	  <div id = "header">
+		  <div class = "header-text">Duckies!</div>
+		 </div>
+		 <div id = "duckies-text">
+	  	<p>
+	  		Duckies is a game based off of the popular "2048" and was a solo challenge I completed at DevBootcamp. It was one of the first javascript projects I undertook with emphasis on Object-oriented programming. As an extended challenge to myself I opted out of storing the values in a nested array, and instead stored them in one long array. The final code could use a refactor, but I believe it illustrates solid OOP.
+  		</p>
+  		<h3>Controls:</h3>
+  		<h5> Up Arrow to shift all images up </h5><br>
+  		<h5> Left Arrow to shift all images left </h5><br>
+  		<h5> Down Arrow to shift all images down </h5><br>
+  		<h5> Right Arrow to shift all images right </h5><br>
+  	</div>
 		<div class = "game-container">
 		  <div id = "game-board">
 		    <div class = "row">
@@ -88,6 +103,7 @@
 		    </div>
 		 </div>
 		</div>
+
 	</div>
 
 <footer>

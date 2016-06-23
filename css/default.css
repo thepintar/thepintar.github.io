@@ -34,6 +34,16 @@ header {
 	color: white;
 }
 
+#home-link{
+	text-decoration: none;
+	color: white;
+}
+
+#home-link:hover{
+	text-decoration: none;
+	color: white;
+}
+
 #blog-nav{
 	display: inline-block;
 	height: 100%;
@@ -111,6 +121,7 @@ header {
 	background-color: #A45AE8;
 	height: 100vh;
 	display:none;
+	color: white;
 }
 
 #projects-container{
@@ -129,10 +140,24 @@ header {
 
 #face-img{
 	float: left;
+	margin: 10px;
+	margin-top: 0px;
+	margin-left: 0px;
 }
 
 #resume{
 	clear:both;
+}
+
+.main-container{
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-text{
+	text-align: left;
+	padding: 5px;
 }
 
 footer{
