@@ -103,24 +103,28 @@ header {
 	padding: 20px;
 	background-color: #FF6F95;
 	height: 100vh;
+	display:none;
 }
 
 #about-container{
 	padding: 20px;
 	background-color: #A45AE8;
 	height: 100vh;
+	display:none;
 }
 
 #projects-container{
 	padding: 20px;
 	background-color: #6FA1FF;
 	height: 100vh;
+	display:none;
 }
 
 #game-container{
 	padding: 20px;
 	background-color: #5AE8CA;
 	height: 100vh;
+	display:none;
 }
 
 #face-img{
