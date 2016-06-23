@@ -38,6 +38,7 @@ $(document).ready(function() {
   })
 
   $("#game-nav").on("click", function(){
+    $("#duckies-header").text("Duckies!")
     if (current_nav != "game"){
       console.log("#"+current_nav+"-container")
       $("#"+current_nav+"-container").slideUp(function() {
