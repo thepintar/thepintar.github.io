@@ -1,121 +1,173 @@
-*{
-	background-color:#393850;
-	/*color:#F5F2EF;*/
-}
-
-#top_name{
-margin-left:30%;
-font-size:40px;
-font-family:"Arial Black", sans-serif;
-color:#5A5879;
-
-}
-
-#top_name a{
-	text-decoration:none;
-	color:#5A5879;
-
-}
-
-#nav_bar {
-	/*width:105%;*/
-	position:relative;
-    list-style-type: none;
-    /*margin-left:-10px;*/
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-
-}
-
-#nav_item {
-    
- display:inline-block;
- margin: 15px 0px 15px 0px;
- position:relative;
- /*left:15%;*/
- font-size:16px;
-font-family:"Arial Black", sans-serif;
-
-}
-
-li a {
-
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #333;
-
-}
-
-header nav {
-	margin-bottom:5em;
-
-}
-
-li a:hover {
-
-    background-color: #257BD6;
-    /*color:#28273A;*/
-}
-
-section img{
-	float:left;
-	margin-top:10px;
-	padding-top:30px;
-	position: relative;
-	left:10%;
-}
-div p a{
-	text-decoration:none;
-	color:white;
-}
-div.ruby-class{
-	font-family:courier;
-	padding-left:1em;
-	padding-bottom:1em;
-	width:100%;
+header {
 	background-color: black;
+	height: 5em;
+	position: relative;
+}
+
+#nav-bar{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	margin-right: 8%;
+	height: 5em;
+}
+
+#top-name {
+	margin-left: 8%;
+	display: inline-block;
+	height: 5em;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+#top-name a{
 	color: white;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-link:hover{
+	text-decoration: none;
+	color: white;
+}
+
+#home-link{
+	text-decoration: none;
+	color: white;
+}
+
+#home-link:hover{
+	text-decoration: none;
+	color: white;
+}
+
+#blog-nav{
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	background-color: #FF6F95;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	margin: 0px;
+	font-size: 30px;
+	margin-right: -2px;
+
 
 }
-.main_text{
-width:40%;
-float:left;
-position:relative;
-left:10%;
-padding: 20px;
-font-size:12px;
-font-family:"Century Gothic", sans-serif;
-color:white;
-text-align:left;
+
+#about-nav{
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	background-color: #A45AE8;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	margin: 0px;
+	font-size: 30px;
+	margin-right: -2px;
+	margin-left: -2px;
+
 }
-.wider_text{
-width:80%;
-float:left;
-position:relative;
-left:10%;
-padding: 20px;
-font-size:12px;
-font-family:"Century Gothic", sans-serif;
-color:white;
-text-align:left;
+
+#projects-nav{
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	background-color: #6FA1FF;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	margin: 0px;
+	font-size: 30px;
+	margin-right: -2px;
+	margin-left: -2px;
+
 }
+
+#game-nav{
+	display: inline-block;
+	height: 100%;
+	text-align: center;
+	background-color: #5AE8CA;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	margin: 0px;
+	font-size: 30px;
+	margin-left: -2px;
+
+}
+
+#index-container{
+	padding: 20px;
+	background-color: white;
+	height: 100vh;
+}
+
+#blog-container{
+	padding: 20px;
+	background-color: #FF6F95;
+	height: 100vh;
+	display:none;
+}
+
+#about-container{
+	padding: 20px;
+	background-color: #A45AE8;
+	height: 100vh;
+	display:none;
+	color: white;
+}
+
+#projects-container{
+	padding: 20px;
+	background-color: #6FA1FF;
+	height: 100vh;
+	display:none;
+}
+
+#game-container{
+	padding: 20px;
+	background-color: #5AE8CA;
+	height: 100vh;
+	display:none;
+}
+
+#face-img{
+	float: left;
+	margin: 10px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
 #resume{
 	clear:both;
-	float:left;
-	margin-top:5px;
-	position: relative;
-	left:10%;
 }
-#resume a{
-	text-decoration:none;
-	color:white;
-	font-family:"Century Gothic", sans-serif;
+
+.main-container{
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
 }
-.social_media{
-	clear:both;
-	position:relative;
-	left:45%;
+
+.main-text{
+	text-align: left;
+	padding: 5px;
+}
+
+footer{
+	padding: 10px;
+	background-color: black;
+	color: white;
+}
+
+#social-media{
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
 }

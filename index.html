@@ -7,46 +7,111 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/application.css">
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		Michael Pintar's Site
+		Michael Pintar
 	</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/site.js"></script>
 </head>
 
 <body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-	<header>
-	
-		<div id="top_name"><a href="index.html">Michael Pintar</a></div>
-		<nav><center>
-			<ul id="nav_bar">
-				<li id="nav_item"><a href="blog/index.html">BLOG</a></li>
-				<li id="nav_item"><a href="about.html">ABOUT ME</a></li>
-				<li id="nav_item"><a href="projects.html">PROJECTS</a></li>
-				<li id="nav_item"><a href="game.html">GAME</a></li>
-				<li id="nav_item"><a href="#">OTHER</a></li>
-			</ul>
-		</center>
-		</nav>
-	</header>
-	
-	<section>	
-	<img src="imgs/myface.png"/>
-	<div class="main_text"><p><h1>It's nice to see you here!</h1></p>
-	<p>Its always lovely to have visitors, of course. I hope you're planning on having a look about the place. We've a few different opportunities on offer at the moment. First of all, a photo of my face! I'm not usually one for selfies, but I don't mind parading around one that took so long to do properly.</p><p>Second of all, please do feel free to run your mouse across the navigation menu. I can't promise much for functionality, apart from the blog, but the color changes are lovely in my opinion. It really is something. I apologize if you're upset about the lack of Owl content currently, so in the meantime please go <a href="https://s-media-cache-ak0.pinimg.com/736x/bd/21/68/bd2168672bfbb98c66e2586529e59b0f.jpg">here</a>.</div>
-	<div id="resume"><a href ="#">My Resume</a></div>
-	
-	</section>
 
+	<header>
+		<div id="top-name"><a id = "home-link" href="index.html">Michael Pintar</a></div>
+		<div id = "nav-bar">
+			<div id="blog-nav"><a class = "nav-link" href="blog/index.html">BLOG</a></div>
+			<div id="about-nav"><a class = "nav-link" href="about.html">ABOUT ME</a></div>
+			<div id="projects-nav"><a class = "nav-link" href="projects.html">PROJECTS</a></div>
+			<div id="game-nav"><a class = "nav-link" href="game.html">GAME</a></div>
+		</div>
+	</header>
+
+	<div id = "index-container">
+			
+		<div class="main-container">
+		Under Construction: Try nav bar!
+		</div>
+	</div>
+
+	<div id = "blog-container">
+		<div class = "main-container">Something here.
+		</div>
+	</div>
+
+	<div id = "about-container">
+		<div class="main-container">
+			<img id = "face-img" src="imgs/myface.png"/>
+			<div class = "main-text">Something here.</div>
+			<div id="resume"><a href ="MichaelKPintarResume.pdf">My Resume</a></div>
+		</div>
+	</div> 
+
+	<div id = "projects-container">
+		<div class = "main-container">Something here.
+		</div>
+	</div> 
+
+	<div id = "game-container">
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	  <script src="js/mousetrap.js"></script>
+	  <script src="js/underscore.js"></script>
+	  <script src="lib/jasmine/jasmine.js"></script>
+	  <script src="js/game.js"></script>
+	  <script src="js/application.js"></script>
+	  <div id = "header">
+		  <div class = "header-text">Duckies!</div>
+		 </div>
+		 <div id = "duckies-text">
+	  	<p>
+	  		Duckies is a game based off of the popular "2048" and was a solo challenge I completed at DevBootcamp. It was one of the first javascript projects I undertook with emphasis on Object-oriented programming. As an extended challenge to myself I opted out of storing the values in a nested array, and instead stored them in one long array. The final code could use a refactor, but I believe it illustrates solid OOP.
+  		</p>
+  		<h3>Controls:</h3>
+  		<h5> Up Arrow to shift all images up </h5><br>
+  		<h5> Left Arrow to shift all images left </h5><br>
+  		<h5> Down Arrow to shift all images down </h5><br>
+  		<h5> Right Arrow to shift all images right </h5><br>
+  	</div>
+		<div class = "game-container">
+		  <div id = "game-board">
+		    <div class = "row">
+		      <div class = "tile" id = "0"></div>
+		      <div class = "tile" id = "1"></div>
+		      <div class = "tile" id = "2"></div>
+		      <div class = "tile" id = "3"></div>
+		    </div>
+		    <div class = "row">
+		      <div class = "tile" id = "4"></div>
+		      <div class = "tile" id = "5"></div>
+		      <div class = "tile" id = "6"></div>
+		      <div class = "tile" id = "7"></div>
+		    </div>
+		    <div class = "row">
+		      <div class = "tile" id = "8"></div>
+		      <div class = "tile" id = "9"></div>
+		      <div class = "tile" id = "10"></div>
+		      <div class = "tile" id = "11"></div>
+		    </div>
+		    <div class = "row">
+		      <div class = "tile" id = "12"></div>
+		      <div class = "tile" id = "13"></div>
+		      <div class = "tile" id = "14"></div>
+		      <div class = "tile" id = "15"></div>
+		    </div>
+		 </div>
+		</div>
+
+	</div>
 
 <footer>
-	<nav class="social_media">
-		<a href="https://www.linkedin.com/in/michaelkpintar"><img src="imgs/linked-in-logo.jpg"/></a>
-		<a href="https://www.facebook.com/tartanfurmonster"><img src="imgs/facebook-logo.png"/></a>
-		<a href="https://plus.google.com/110364470050516464556/"><img src="imgs/google-plus-logo.png"/></a>
-	</nav>
+	<div id="social-media">
+		<a href="https://www.linkedin.com/in/michaelkpintar">Linked In | </a>
+		<a href="https://www.facebook.com/tartanfurmonster">Facebook | </a>
+		<a href="https://www.github.com/thepintar">GitHub</a>
+	</div>
 	<p style="font-size:12px; font-family:arial; text-align:center"><a href="mailto:thepintar@gmail.com">Contact Me</a></p>
 </footer>
 </body>
