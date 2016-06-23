@@ -1,5 +1,10 @@
 $(document).ready(function() {
-  var current_nav == "index"
+  var current_nav = "index"
+
+  $(".nav-link").on("click", function(){
+    event.preventDefault();
+  })
+
   $("#blog-nav").on("click", function(){
     $("#"+current_nav+"-container").slideUp();
     $("#blog-container").slideDown();
@@ -24,9 +29,9 @@ $(document).ready(function() {
     current_nav = "game";
   })
 
-});
 
-  if (current_nav == "index" {
+
+  if (current_nav == "index") {
 
   }else if(current_nav=="blog"){
 
@@ -100,4 +105,4 @@ $(document).ready(function() {
     });
   };
 
-
+});
